@@ -10,8 +10,8 @@ public class App {
         Jugador jugador1 = new Jugador("Juan", "Juanito", 27);
         Jugador jugador2 = new Jugador("Antonio", "Tony", 56);
         Jugador jugador3 = new Jugador("David", "ElMisterx", 70);
-        Videojuego juego1 = new Videojuego("Geometry Dash", 2, "2013", "Música", null);
-        Videojuego juego2 = new Videojuego("Honkai Star Rail", 0, "2023", "RPG", null);
+        Videojuego juego1 = new Videojuego("Geometry Dash", 2, "12/08/2013", "Música", null);
+        Videojuego juego2 = new Videojuego("Honkai Star Rail", 0, "26/04/2023", "RPG", null);
         VideojuegoEstrategia juegoEstrategia = new VideojuegoEstrategia("UnderTale", 15, "15/09/2015", "Aventura", null,
                 "Tablero y fichas", 50);
 

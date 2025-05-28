@@ -3,10 +3,10 @@ package com.proyecto;
 public class Consola implements Plataforma {
 
     private String modelo;
-    private int almacenamiento;
+    private String almacenamiento;
     private boolean esPortatil;
 
-    public Consola(String modelo, int almacenamiento, boolean esPortatil) {
+    public Consola(String modelo, String almacenamiento, boolean esPortatil) {
         this.modelo = modelo;
         this.almacenamiento = almacenamiento;
         this.esPortatil = esPortatil;
@@ -16,31 +16,25 @@ public class Consola implements Plataforma {
         return modelo;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public int getAlmacenamiento() {
-        return almacenamiento;
-    }
-
-    public void setAlmacenamiento(int almacenamiento) {
-        this.almacenamiento = almacenamiento;
-    }
-
     public boolean isEsPortatil() {
         return esPortatil;
     }
-
-    public void setEsPortatil(boolean esPortatil) {
-        this.esPortatil = esPortatil;
+    
+    public void verConsola() {
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Almacenamiento: " + almacenamiento);
+        if (esPortatil = true) {
+            System.out.println("Es portatil");
+        } else {
+            System.out.println("No es portatil");
+        }
     }
 
-    public void sincronizarMando(){
+    public void sincronizarMando() {
         System.out.println("Sincronizando mando de la consola " + modelo);
-        if (this.esPortatil=true){
+        if (esPortatil = true) {
             System.out.println("La consola es portatil, no se puede vincular el mando");
-        }else{
+        } else {
             System.out.println("El mando se ha vinculado correctamente");
         }
     }
@@ -66,5 +60,5 @@ public class Consola implements Plataforma {
     public void desconectarRed() {
         System.out.println("La consola se ha desconectado de la red");
     }
-    
+
 }

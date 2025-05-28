@@ -2,41 +2,24 @@ package com.proyecto;
 
 public class PC implements Plataforma {
 
+    private String modelo;
     private String sistemaOperativo;
     private String procesador;
     private String ram;
 
-    public PC(String sistemaOperativo, String procesador, String ram) {
+    public PC(String modelo, String sistemaOperativo, String procesador, String ram) {
+        this.modelo = modelo;
         this.sistemaOperativo = sistemaOperativo;
         this.procesador = procesador;
         this.ram = ram;
     }
 
-    public String getSistemaOperativo() {
-        return sistemaOperativo;
-    }
-
-    public void setSistemaOperativo(String sistemaOperativo) {
-        this.sistemaOperativo = sistemaOperativo;
-    }
-
-    public String getProcesador() {
-        return procesador;
-    }
-
-    public void setProcesador(String procesador) {
-        this.procesador = procesador;
-    }
-
-    public String getRam() {
-        return ram;
-    }
-
-    public void setRam(String ram) {
-        this.ram = ram;
+    public String getModelo() {
+        return modelo;
     }
 
     public void verificarRequisitos() {
+        System.out.println("Modelo: " + modelo);
         System.out.println("Sistema Operativo: " + sistemaOperativo);
         System.out.println("Procesador: " + procesador);
         System.out.println("Tiene " + ram + " GB de RAM");

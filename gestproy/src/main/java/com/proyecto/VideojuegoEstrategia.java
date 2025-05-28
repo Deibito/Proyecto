@@ -6,7 +6,7 @@ public class VideojuegoEstrategia extends Videojuego {
     private float duracion;
 
     public VideojuegoEstrategia(String nombre, float precio, String fechaSalida, String genero,
-            Jugador idJugador,String tipoEstrategia, float duracion) {
+            Jugador idJugador, String tipoEstrategia, float duracion) {
         super(nombre, precio, fechaSalida, genero, idJugador);
         this.tipoEstrategia = tipoEstrategia;
         this.duracion = duracion;
@@ -16,12 +16,12 @@ public class VideojuegoEstrategia extends Videojuego {
         this.idJugador = idJugador;
     }
 
-    public void mostrarDetallesEstrategia(){
+    public void mostrarDetallesEstrategia() {
         System.out.println("Tipo de estrategia: " + tipoEstrategia);
         System.out.println("Duracion: " + duracion + " horas");
     }
 
-    public void calcularDuracion(){
+    public void calcularDuracion() {
         System.out.println("La duracion del videojuego es: " + this.duracion + " horas");
     }
 

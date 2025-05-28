@@ -20,7 +20,7 @@ public class Movil implements Plataforma {
         return notificaciones;
     }
 
-    public void verDetalles(){
+    public void verDetalles() {
         System.out.println("Modelo: " + modelo);
         System.out.println("Bateria: " + bateria);
         if (notificaciones = true) {

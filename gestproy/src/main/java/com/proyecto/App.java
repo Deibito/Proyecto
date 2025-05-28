@@ -6,7 +6,8 @@ package com.proyecto;
  */
 public class App {
     public static void main(String[] args) {
-        //Creo 3 jugadores y creo un videojuego normal y un videojuego de tipo estrategia
+        // Creo 3 jugadores y creo un videojuego normal y un videojuego de tipo
+        // estrategia
         Jugador jugador1 = new Jugador("Juan", "Juanito", 27);
         Jugador jugador2 = new Jugador("Antonio", "Tony", 56);
         Jugador jugador3 = new Jugador("David", "ElMisterx", 70);
@@ -15,17 +16,17 @@ public class App {
         VideojuegoEstrategia juegoEstrategia = new VideojuegoEstrategia("UnderTale", 15, "15/09/2015", "Aventura", null,
                 "Tablero y fichas", 50);
 
-        //Aplico los métodos de la clase Jugador
+        // Aplico los métodos de la clase Jugador
         jugador1.muestraPerfil();
         jugador1.aumentarNivel();
         System.out.println();
         jugador2.muestraPerfil();
-        jugador2.getVideojuego();
         jugador2.aumentarNivel();
         System.out.println();
         jugador3.muestraPerfil();
+        System.out.println();
 
-        //Aplico los métodos de la clase Videojuego
+        // Aplico los métodos de la clase Videojuego
         System.out.println("Primer juego:");
         juego1.setIdJugador(jugador1);
         juego1.mostrarDetalles();
@@ -37,7 +38,7 @@ public class App {
         juego2.getPerfilJugador(jugador3);
         System.out.println();
 
-        //Aplico los métodos de la clase VideojuegoEstrategia
+        // Aplico los métodos de la clase VideojuegoEstrategia
         System.out.println("Tercer juego:");
         juegoEstrategia.setIdJugador(jugador2);
         juegoEstrategia.mostrarDetalles();
@@ -45,18 +46,18 @@ public class App {
         juegoEstrategia.calcularDuracion();
         System.out.println();
 
-        //Creo un objetos para todos los tipos de la clase Plataforma
-        PC pc = new PC("MSI Bravo 15 B5ED","Windows 11", "Intel Core i9", "32GB");
+        // Creo un objetos para todos los tipos de la clase Plataforma
+        PC pc = new PC("MSI Bravo 15 B5ED", "Windows 11", "Intel Core i9", "32GB");
         Consola consola = new Consola("PlayStation 5", "1TB", true);
         Movil movil = new Movil("Samsung S22", "78%", true);
 
-        //Aplico los métodos de la clase PC
+        // Aplico los métodos de la clase PC
         pc.verificarRequisitos();
         pc.iniciar();
         pc.conectarRed();
         System.out.println();
 
-        //Aplico los métodos de la clase Consola
+        // Aplico los métodos de la clase Consola
         consola.verConsola();
         consola.sincronizarMando();
         consola.iniciar();
@@ -64,7 +65,7 @@ public class App {
         consola.detener();
         System.out.println();
 
-        //Aplico los métodos de la clase Movil
+        // Aplico los métodos de la clase Movil
         movil.verDetalles();
         movil.iniciar();
         movil.conectarRed();
@@ -73,9 +74,12 @@ public class App {
         movil.detener();
         System.out.println();
 
-        //Aplico algunos ejemplos juntando los objetos en una misma sentencia
-        System.out.println("El jugador " + jugador1.getNombre() + " está jugando actualmente a " + juego1.getNombre() + " en su " + pc.getModelo());
-        System.out.println("El jugador " + jugador2.getNombre() + " está jugando actualmente a " + juegoEstrategia.getNombre() + " en su " + consola.getModelo());
-        System.out.println("El jugador " + jugador3.getNombre() + " está jugando actualmente a " + juego2.getNombre() + " en su " + movil.getModelo());
+        // Aplico algunos ejemplos juntando los objetos en una misma sentencia
+        System.out.println("El jugador " + jugador1.getNombre() + " está jugando actualmente a " + juego1.getNombre()
+                + " en su " + pc.getModelo());
+        System.out.println("El jugador " + jugador2.getNombre() + " está jugando actualmente a "
+                + juegoEstrategia.getNombre() + " en su " + consola.getModelo());
+        System.out.println("El jugador " + jugador3.getNombre() + " está jugando actualmente a " + juego2.getNombre()
+                + " en su " + movil.getModelo());
     }
 }

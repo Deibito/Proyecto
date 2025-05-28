@@ -19,7 +19,7 @@ public class Consola implements Plataforma {
     public boolean isEsPortatil() {
         return esPortatil;
     }
-    
+
     public void verConsola() {
         System.out.println("Modelo: " + modelo);
         System.out.println("Almacenamiento: " + almacenamiento);

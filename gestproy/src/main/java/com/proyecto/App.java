@@ -1,13 +1,8 @@
 package com.proyecto;
 
-/**
- * Hello world!
- *
- */
 public class App {
     public static void main(String[] args) {
-        // Creo 3 jugadores y creo un videojuego normal y un videojuego de tipo
-        // estrategia
+        // Creo 3 jugadores y creo un videojuego normal y un videojuego de tipo estrategia
         Jugador jugador1 = new Jugador("Juan", "Juanito", 27);
         Jugador jugador2 = new Jugador("Antonio", "Tony", 56);
         Jugador jugador3 = new Jugador("David", "ElMisterx", 70);
@@ -43,7 +38,6 @@ public class App {
         juegoEstrategia.setIdJugador(jugador2);
         juegoEstrategia.mostrarDetalles();
         juegoEstrategia.mostrarDetallesEstrategia();
-        juegoEstrategia.calcularDuracion();
         System.out.println();
 
         // Creo un objetos para todos los tipos de la clase Plataforma
@@ -52,7 +46,7 @@ public class App {
         Movil movil = new Movil("Samsung S22", "78%", true);
 
         // Aplico los métodos de la clase PC
-        pc.verificarRequisitos();
+        pc.verCaracterísticas();
         pc.iniciar();
         pc.conectarRed();
         System.out.println();

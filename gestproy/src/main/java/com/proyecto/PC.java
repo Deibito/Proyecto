@@ -18,7 +18,7 @@ public class PC implements Plataforma {
         return modelo;
     }
 
-    public void verificarRequisitos() {
+    public void verCaracterísticas() {
         System.out.println("Modelo: " + modelo);
         System.out.println("Sistema Operativo: " + sistemaOperativo);
         System.out.println("Procesador: " + procesador);

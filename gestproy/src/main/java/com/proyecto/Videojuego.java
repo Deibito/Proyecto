@@ -48,10 +48,10 @@ public class Videojuego {
         System.out.println("Id del jugador: " + idJugador.getId());
     }
 
-    public void getPerfilJugador(Jugador j) {
-        System.out.println("Nombre del Jugador: " + j.getNombre());
-        System.out.println("Id del Jugador: " + j.getId());
-        System.out.println("Nivel del Jugador: " + j.getNivelCuenta());
+    public String getPerfilJugador(Jugador j) {
+        return "Nombre del Jugador: " + j.getNombre() + "\n"
+                + "Id del Jugador: " + j.getId() + "\n"
+                + "Nivel del Jugador: " + j.getNivelCuenta();
     }
 
 }

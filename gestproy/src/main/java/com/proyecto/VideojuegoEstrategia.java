@@ -18,11 +18,6 @@ public class VideojuegoEstrategia extends Videojuego {
 
     public void mostrarDetallesEstrategia() {
         System.out.println("Tipo de estrategia: " + tipoEstrategia);
-        System.out.println("Duracion: " + duracion + " horas");
+        System.out.println("Duracion: " + duracion + " segundos para realizar acciones");
     }
-
-    public void calcularDuracion() {
-        System.out.println("La duracion del videojuego es: " + this.duracion + " horas");
-    }
-
 }

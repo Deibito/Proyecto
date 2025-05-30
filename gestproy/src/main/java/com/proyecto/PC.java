@@ -29,6 +29,7 @@ public class PC implements Plataforma {
     public void iniciar() {
         System.out.println("El sistema se ha iniciado correctamente, está listo para usarse");
         System.out.println("Bienvenido a su PC personal");
+        System.out.println("Iniciando el juego...");
     }
 
     @Override

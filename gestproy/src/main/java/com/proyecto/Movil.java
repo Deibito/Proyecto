@@ -43,6 +43,7 @@ public class Movil implements Plataforma {
     public void iniciar() {
         System.out.println("Su teléfono móvil está encendido");
         System.out.println("Bienvenido al móvil " + this.modelo);
+        System.out.println("Iniciando el juego...");
     }
 
     @Override
